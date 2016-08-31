@@ -16,7 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".TransferActivity" />
-        <activity android:name=".ConfirmActivity"></activity>
+        <activity android:name=".ConfirmActivity" />
+        <activity android:name=".TransferResultActivity"></activity>
     </application>
 
 </manifest>
