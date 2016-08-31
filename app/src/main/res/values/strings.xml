@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">SomkiatBankMobileBanking</string>
     <string name="loading">Loading…</string>
+
+
+    <string-array name="account_name_array">
+        <item>ประธาน ด่านสกุลเจริญกิจ</item>
+        <item>ABC</item>
+    </string-array>
+
 </resources>
