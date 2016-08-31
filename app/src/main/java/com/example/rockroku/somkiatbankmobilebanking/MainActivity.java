@@ -7,7 +7,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+import com.example.rockroku.somkiatbankmobilebanking.common.BaseActivity;
+
+public class MainActivity extends BaseActivity implements View.OnClickListener {
 
     private TextView mTvName;
     private TextView mTvAccountNo;
@@ -20,6 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         bindView();
+        setViewListener();
 
     }
 
@@ -30,11 +33,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mBtTransfer = (Button) findViewById(R.id.bt_transfer);
     }
 
+    private void setViewListener() {
+        mBtTransfer.setOnClickListener(this);
+    }
+
 
     @Override
     public void onClick(View view) {
         if(view == mBtTransfer) {
             //goto next transfer page
+            openActivity(TransferActivity.class);
         }
     }
 }
