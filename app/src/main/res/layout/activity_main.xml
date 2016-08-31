@@ -4,12 +4,12 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:gravity="center"
     tools:context="com.example.rockroku.somkiatbankmobilebanking.MainActivity">
 
     <LinearLayout
@@ -18,16 +18,17 @@
         android:orientation="horizontal">
 
         <TextView
+            android:id="@+id/tv_name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ชื่อ: " />
+
+        <TextView
             android:id="@+id/tv_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="ชื่อ" />
-
-        <EditText
-            android:id="@+id/et_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="name..." />
+            android:layout_marginLeft="3dp"
+            android:hint="สมเกียรติ ปุ๋ยสูงเนิน" />
     </LinearLayout>
 
     <LinearLayout
@@ -36,21 +37,41 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/tv_balance"
+            android:id="@+id/tv_account_no_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="ยอดเงิน" />
+            android:text="เลขที่บัญชี: " />
 
-        <EditText
-            android:id="@+id/et_balance"
+        <TextView
+            android:id="@+id/tv_account_no"
+            android:layout_marginLeft="3dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="balnace" />
+            android:hint="123456" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_balance_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ยอดเงิน: " />
+
+        <TextView
+            android:id="@+id/tv_balance"
+            android:layout_marginLeft="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100,000" />
     </LinearLayout>
 
     <Button
         android:id="@+id/bt_transfer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="โอนเงิน"/>
+        android:text="โอนเงิน" />
 </LinearLayout>

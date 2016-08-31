@@ -5,12 +5,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private EditText mEtName;
-    private EditText mEtBalance;
+    private TextView mTvName;
+    private TextView mTvAccountNo;
+    private TextView mTvBalance;
     private Button mBtTransfer;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,8 +24,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void bindView() {
-        mEtName = (EditText) findViewById(R.id.et_name);
-        mEtBalance  = (EditText) findViewById(R.id.et_balance);
+        mTvName = (TextView) findViewById(R.id.tv_name);
+        mTvAccountNo  = (TextView) findViewById(R.id.tv_account_no);
+        mTvBalance = (TextView) findViewById(R.id.tv_balance);
         mBtTransfer = (Button) findViewById(R.id.bt_transfer);
     }
 
