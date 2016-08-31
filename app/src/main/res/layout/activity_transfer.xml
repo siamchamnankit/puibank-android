@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_transfer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.example.rockroku.somkiatbankmobilebanking.TransferActivity">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_account_type_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To ประเภท: " />
+
+        <TextView
+            android:id="@+id/tv_account_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="ออมทรัพย์" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_account_name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ชื่อบัญชี: " />
+
+        <TextView
+            android:id="@+id/tv_account_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="ประธาน ด่านสกุลเจริญกิจ" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_account_no_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="เลขที่บัญชี: " />
+
+        <TextView
+            android:id="@+id/tv_account_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="8472124235" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_transfer_amount_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="จำนวนเงินโอน: " />
+
+        <TextView
+            android:id="@+id/tv_transfer_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="20,000" />
+
+        <TextView
+            android:id="@+id/tv_transfer_unit_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="บาท" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_transfer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="โอน"/>
+
+
+</LinearLayout>
